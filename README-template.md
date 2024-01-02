@@ -29,7 +29,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/loopstudios%20mobile.png)
+![](./screenshots/loopstudios%20mobile%20menu.png)
+![](./screenshots/loopstudios%20desktop%20active%200.png)
+![](./screenshots/loopstudios%20desktop%20active%201.png)
+![](./screenshots/loopstudios%20desktop%20active%202.png)
 
 ### Links
 
