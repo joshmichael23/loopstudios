@@ -424,7 +424,7 @@ footer{
       background-size: cover;
       padding: 2rem 2rem;
       cursor: pointer;
-      
+      overflow: hidden;
     }
 
     .creations > div:hover{
@@ -438,7 +438,7 @@ footer{
     .creations > div::after{
       position: absolute;
       z-index: 2;
-      height: 0;
+      height: 100%;
       width: 100%;
       left: 0;
       bottom: 0;
@@ -447,9 +447,24 @@ footer{
       transition: all .2s ease;
     }
 
-    .creations > div:hover::after{
+    .creations > div::before{
+      position: absolute;
+      z-index: 2;
       height: 100%;
+      width: 100%;
+      left: 0;
+      bottom: 100%;
+      content: '';
       background-image: linear-gradient(hsl(0, 0%, 100%, .5) 0%, hsl(0, 0%, 100%, .5)  100%);
+      transition: all .2s ease;
+    }
+
+    .creations > div:hover::before{
+      bottom: 0;
+    }
+
+    .creations > div:hover::after{
+      bottom: 100%;
     }
 
 
